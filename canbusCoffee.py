@@ -44,6 +44,7 @@ for track in tracks:
     brand = page_title
     title = track.select_one("#pageWrap > ul > li > p").text.strip()    
     image_url = track.select_one("#pageWrap > ul > li > img").get('src').replace('/images', 'http://canbus.kr/images')
+    image_url = image_url.split('?')[0]
     coffee_data.append({
         "brand": brand,
         "title": title,
