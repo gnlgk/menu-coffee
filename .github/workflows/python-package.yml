@@ -42,13 +42,13 @@ jobs:
       
     - name: run file
       run: |
-        python3 paiksCoffee.py
+        python3 caffebeneCoffee.py
         
     - name: commits
       run : |
         git config --global user.email "gnlgk@gmail.com"
         git config --global user.name "gnlgk"
-        git add paiks/menupaiks_*.json
+        git add caffebene/menucaffebene_*.json
         git commit -m "메뉴 수집 완료"
         
     - name: push
