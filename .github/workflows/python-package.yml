@@ -45,6 +45,7 @@ jobs:
         python3 caffebeneCoffee.py
         python3 canbusCoffee.py
         python3 coffeebanhadaCoffee.py
+        python3 coffeebayCoffee.py
                 
     - name: commits
       run : |
@@ -53,6 +54,7 @@ jobs:
         git add caffebene/menucaffebene_*.json
         git add canbus/menucanbus_*.json
         git add coffeebanhada/menucoffeebanhada_*.json
+        git add coffeebay/menucoffeebay_*.json
         git commit -m "메뉴 수집 완료"
         
     - name: push
