@@ -12,7 +12,8 @@ import json
 
 # 현재 날짜 가져오기
 current_date = datetime.now().strftime("%Y-%m-%d")
-filename = f"menu-ediya_{current_date}.json"
+folder_path = "ediya"
+filename = f"{folder_path}/menuediya_{current_date}.json"
 
 # 웹드라이버 초기화 (Chrome 사용)
 options = ChromeOptions()
