@@ -1,14 +1,15 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from selenium.webdriver.chrome.options import Options as ChromeOptions
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 from datetime import datetime
 import time
 import json
+import os
 
 # 현재 날짜 가져오기
 current_date = datetime.now().strftime("%Y-%m-%d")
@@ -53,7 +54,6 @@ tracks = soup.select("#menu_ul li")
 for track in tracks:
     name = track.select_one(".menu_tt > a > span").text.strip()
     image_url = track.select_one("a > img").get('src').replace('/images', 'https://www.ediya.com/files')
-    
     detail_con = track.select_one(".detail_con")
     
     titleE = detail_con.select_one("h2 > span").text.strip() if detail_con.select_one("h2 > span") else ""
