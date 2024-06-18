@@ -7,68 +7,77 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 from datetime import datetime
-import time
 import json
 import os
 import re
 
-# 현재 날짜 가져오기
-current_date = datetime.now().strftime("%Y-%m-%d")
-folder_path = "coffeebay"
-filename = f"{folder_path}/menucoffeebay_{current_date}.json"
+# Function to create a folder if it doesn't exist
+def create_folder_if_not_exists(folder_path):
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
 
-# 폴더 생성
-if not os.path.exists(folder_path):
-    os.makedirs(folder_path)
+# Function to initialize and configure the Chrome WebDriver
+def initialize_browser():
+    options = ChromeOptions()
+    options.add_argument("--headless")
+    return webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
 
-# 웹드라이브 설치
-options = ChromeOptions()
-options.add_argument("--headless")
-browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
-browser.get("https://www.coffeebay.com/product/prd_menu.php?code=001&idx2=001")
+# Function to extract coffee data from the webpage
+def extract_coffee_data(soup, page_title):
+    coffee_data = []
+    tracks = soup.select("#sub_con > div > div > .list_con > div > .list_con > ul > li")
 
-# 페이지가 완전히 로드될 때까지 대기
-WebDriverWait(browser, 10).until(
-    EC.presence_of_element_located((By.CLASS_NAME, "list_con"))
-)
+    for track in tracks:
+        title = track.select_one(".list_div .title_con .kor_con span").text.strip()
+        en_title = track.select_one(".list_div .title_con .eng_con span").text.strip()
+        image_style = track.select_one(".list_div .img_con").get('style')
+        
+        # Extract URL without surrounding quotes
+        image_url_match = re.search(r'url\(["\']?(.*?)["\']?\)', image_style)
+        if image_url_match:
+            image_url = image_url_match.group(1).replace("/upload", "https://www.coffeebay.com/upload")
+        else:
+            image_url = "No Image URL"
+        
+        sub_title = track.select_one(".over_con > .contents_con.w_niceScroll_con > .contents_con.m_niceScroll_con > .info01_con > .intro_con span").text.strip()
+        content = track.select_one(".over_con > .contents_con.w_niceScroll_con > .contents_con.m_niceScroll_con > .info02_con > .info_con span").text.strip()
 
-# 업데이트된 페이지 소스를 변수에 저장
-html_source_updated = browser.page_source
-soup = BeautifulSoup(html_source_updated, 'html.parser')
+        canonical_link = soup.find('link', rel='canonical')
+        address = canonical_link['href'].strip() if canonical_link else "No Address"
 
-# 헤드의 타이틀을 가져옴
-page_title = soup.head.title.text.strip() if soup.head.title else "No Title"
+        coffee_data.append({
+            "brand": page_title,
+            "title": title,
+            "titleE": en_title,
+            "imageURL": image_url,
+            "description": sub_title,
+            "information": content,
+            "address": address
+        })
 
-# 데이터 추출
-coffee_data = []
-tracks = soup.select("#sub_con > div > div > .list_con > div > .list_con > ul > li")
+    return coffee_data
 
-for track in tracks:
-    brand = page_title  # 페이지 타이틀을 브랜드로 사용
-    title = track.select_one(".list_div .title_con .kor_con span").text.strip()
-    en_title = track.select_one(".list_div .title_con .eng_con span").text.strip()
-    image_style = track.select_one(".list_div .img_con").get('style')
-    image_url = re.search(r'url\((.*?)\)', image_style).group(1).replace("/upload", "https://www.coffeebay.com/upload")
-    sub__title = track.select_one(".over_con > .contents_con.w_niceScroll_con > .contents_con.m_niceScroll_con > .info01_con > .intro_con span").text.strip()
-    content = track.select_one(".over_con > .contents_con.w_niceScroll_con > .contents_con.m_niceScroll_con > .info02_con > .info_con span").text.strip()
+# Main script execution
+if __name__ == "__main__":
+    current_date = datetime.now().strftime("%Y-%m-%d")
+    folder_path = "coffeebay"
+    filename = f"{folder_path}/menucoffeebay_{current_date}.json"
 
-    # 'link', rel='canonical' 부분 수정
-    canonical_link = soup.find('link', rel='canonical')
-    address = canonical_link['href'].strip() if canonical_link else "No Address"
-    
-    coffee_data.append({
-        "brand": brand,
-        "title": title,
-        "titleE": en_title,
-        "imageURL": image_url,
-        "desction": sub__title,
-        "information": content,
-        "address": address
-    })
+    create_folder_if_not_exists(folder_path)
+    browser = initialize_browser()
+    browser.get("https://www.coffeebay.com/product/prd_menu.php?code=001&idx2=001")
 
-# 데이터를 JSON 파일로 저장
-with open(filename, 'w', encoding='utf-8') as f:
-    json.dump(coffee_data, f, ensure_ascii=False, indent=4)
+    WebDriverWait(browser, 10).until(
+        EC.presence_of_element_located((By.CLASS_NAME, "list_con"))
+    )
 
-# 브라우저 종료
-browser.quit()
+    html_source_updated = browser.page_source
+    soup = BeautifulSoup(html_source_updated, 'html.parser')
+    page_title = soup.head.title.text.strip() if soup.head.title else "No Title"
+
+    coffee_data = extract_coffee_data(soup, page_title)
+
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(coffee_data, f, ensure_ascii=False, indent=4)
+
+    browser.quit()
