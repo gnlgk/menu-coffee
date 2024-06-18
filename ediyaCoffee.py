@@ -15,6 +15,10 @@ current_date = datetime.now().strftime("%Y-%m-%d")
 folder_path = "ediya"
 filename = f"{folder_path}/menuediya_{current_date}.json"
 
+# 폴더 생성
+if not os.path.exists(folder_path):
+    os.makedirs(folder_path)
+
 # 웹드라이버 초기화 (Chrome 사용)
 options = ChromeOptions()
 options.add_argument("--headless")
