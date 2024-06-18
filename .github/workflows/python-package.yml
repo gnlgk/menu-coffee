@@ -49,6 +49,7 @@ jobs:
         python3 coffeebayCoffee.py
         python3 composeCoffee.py
         python3 dessert39Coffee.py
+        python3 ediyaCoffee.py
                 
     - name: commits
       run : |
@@ -61,6 +62,7 @@ jobs:
         git add coffeebay/menucoffeebay_*.json
         git add compose/menucompose_*.json
         git add dessert39/menudessert39_*.json
+        git add ediya/menuediya_*.json
         git commit -m "메뉴 수집 완료"
         
     - name: push
