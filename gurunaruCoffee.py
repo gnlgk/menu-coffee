@@ -9,6 +9,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 import time
 import json
+from urllib.parse import urljoin
 
 # 현재 날짜 가져오기
 current_date = datetime.now().strftime("%Y-%m-%d")
@@ -32,9 +33,10 @@ tracks = soup.select("#contents > div > div > .pro_list > li")
 for track in tracks:
     # 각 커피 항목의 링크(Anchor 태그)를 찾습니다.
     coffee_link = track.select_one("a").get('href')
+    coffee_url = urljoin(browser.current_url, coffee_link)
     
     # 상세 페이지로 이동하여 추가 데이터를 가져옵니다.
-    browser.get(f"https://www.coffine.co.kr/front/menu/{coffee_link}")
+    browser.get(coffee_url)
     
     # 페이지가 완전히 로드될 때까지 대기
     WebDriverWait(browser, 20).until(
@@ -48,14 +50,14 @@ for track in tracks:
     title = detail_soup.select_one(".menu_view_wrap > .menu_info > h3").text.strip()  
     titleE = detail_soup.select_one(".menu_view_wrap > .menu_info > .name_eng").text.strip()  
     image_url = detail_soup.select_one(".menu_view_wrap > .menu_image > img.img").get('src').replace('/uploads', 'https://www.coffine.co.kr/uploads')
-    desction = detail_soup.select_one(".menu_view_wrap > .menu_info > .txt").text.strip() 
+    description = detail_soup.select_one(".menu_view_wrap > .menu_info > .txt").text.strip() 
     
     coffee_data.append({
         "brand": "커핀그루나루",
         "title": title,
         "titleE": titleE,
         "imageURL": image_url,
-        "desction": desction,
+        "description": description,
         "address": "https://www.coffine.co.kr/"
     })
 
