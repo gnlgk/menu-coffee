@@ -52,6 +52,7 @@ jobs:
         python3 gurunaruCoffee.py
         python3 hollysCoffee.py
         python3 mammothCoffee.py
+        python3 paiksCoffee.py
                 
     - name: commits
       run : |
@@ -67,6 +68,7 @@ jobs:
         git add gurunaru/menugurunaru_*.json
         git add hollys/menuhollys_*.json
         git add mammoth/menumammoth_*.json
+        git add paiks/menupaiks_*.json
         git commit -m "메뉴 수집 완료"
         
     - name: push
