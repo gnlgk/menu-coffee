@@ -91,7 +91,7 @@ for seq in seq_list:
                 "brand": page_title,
                 "title": title,
                 "imageURL": image_url,
-                "desction": desction,
+                "description": desction,
                 "information": nutrition_info,
                 "address": address
             })
