@@ -5,7 +5,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
 from bs4 import BeautifulSoup
 from datetime import datetime
 import time
@@ -32,14 +31,13 @@ WebDriverWait(browser, 10).until(
     EC.presence_of_element_located((By.CLASS_NAME, "pb-20"))
 )
 
-# "더보기" 버튼 클릭
+# "더보기" 버튼을 찾아 클릭
 try:
     more_button = WebDriverWait(browser, 10).until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, ".custom-button.main-tab"))
     )
     if more_button:
-        actions = ActionChains(browser)
-        actions.move_to_element(more_button).click().perform()
+        browser.execute_script("arguments[0].click();", more_button)
         print("Clicked '더보기' button.")
         time.sleep(3)  # 페이지가 로드될 시간을 주기 위해 잠시 대기
 except Exception as e:
@@ -54,7 +52,7 @@ coffee_data = []
 tracks = soup.select("#root > .max-w-7xl.p-4.mx-auto.pb-20.w-full > .grid.gap-6.mt-8.grid-cols-1 .relative.w-full")
 
 for track in tracks:
-    title_elem = track.select_one(".relative.w-full button > div > div > p > span:nth-of-type(1)")
+    title_elem = track.select_one(".relative.w-full button > div > div > p > .tracking-wider")
     title = title_elem.text.strip() if title_elem else ""
     
     titleeng_elem = track.select_one(".relative.w-full button > div > div > h3")
