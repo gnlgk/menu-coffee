@@ -9,6 +9,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 import json
 import os
+import re
 
 # 현재 날짜 가져오기
 current_date = datetime.now().strftime("%Y-%m-%d")
@@ -16,10 +17,9 @@ folder_path = "coffeebanhada"
 filename = f"{folder_path}/menucoffeebanhada_{current_date}.json"
 
 # 폴더 생성
-if not os.path.exists(folder_path):
-    os.makedirs(folder_path)
+os.makedirs(folder_path, exist_ok=True)
 
-# 웹드라이브 설치
+# 웹드라이버 설정
 options = ChromeOptions()
 options.add_argument("--headless")
 options.add_argument("--no-sandbox")
@@ -45,14 +45,14 @@ for m_idx in m_idx_list:
         WebDriverWait(browser, 20).until(
             EC.presence_of_element_located((By.CLASS_NAME, "menu_info_top"))
         )
-    except:
-        print(f"Skipping m_idx={m_idx}, element not found.")
+    except Exception as e:
+        print(f"Skipping m_idx={m_idx}, element not found. Error: {e}")
         coffee_data.append({
             "brand": "커피에반하다",
             "title": "",
             "titleE": "",
             "imageURL": "",
-            "desction": "",
+            "description": "",
             "information": {},
             "address": url
         })
@@ -73,7 +73,7 @@ for m_idx in m_idx_list:
             title = item.select_one(".menu_info_right p.menu_title").contents[0].strip()
             titleE = item.select_one(".menu_info_right p.menu_title span").text.strip()
             image_url = item.select_one(".menu_info_left img").get('src').replace('/data', 'https://coffeebanhada.com/data')
-            desction = item.select_one(".menu_info_right p.menu_sub").get_text(separator=" ").strip().replace('\n', ' ').replace('\t', ' ')
+            description = item.select_one(".menu_info_right p.menu_sub").get_text(separator=" ").strip().replace('\n', ' ').replace('\t', ' ')
 
             # HOT 영양 정보 추출
             nutrition_info = {}
@@ -97,7 +97,7 @@ for m_idx in m_idx_list:
                 "title": title,
                 "titleE": titleE,
                 "imageURL": image_url,
-                "desction": desction,
+                "description": description,  # Fixed typo
                 "information": nutrition_info,
                 "address": address
             })
@@ -108,7 +108,7 @@ for m_idx in m_idx_list:
                 "title": "",
                 "titleE": "",
                 "imageURL": "",
-                "desction": "",
+                "description": "",
                 "information": {},
                 "address": address
             })
@@ -118,7 +118,7 @@ for m_idx in m_idx_list:
             "title": "",
             "titleE": "",
             "imageURL": "",
-            "desction": "",
+            "description": "",
             "information": {},
             "address": address
         })
