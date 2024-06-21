@@ -54,6 +54,7 @@ jobs:
         python3 mammothCoffee.py
         python3 paiksCoffee.py
         python3 starbucksCoffee.py
+        python3 theventiCoffee.py
                 
     - name: commits
       run : |
@@ -71,6 +72,7 @@ jobs:
         git add mammoth/menumammoth_*.json
         git add paiks/menupaiks_*.json
         git add starbucks/menustarbucks_*.json
+        git add theventi/menutheventi_*.json
         git commit -m "메뉴 수집 완료"
         
     - name: push
