@@ -14,7 +14,7 @@ import os
 # 현재 날짜 가져오기
 current_date = datetime.now().strftime("%Y-%m-%d")
 folder_path = "tomntoms"
-filename = f"{folder_path}/menu-tomntom_{current_date}.json"
+filename = f"{folder_path}/menutomntom_{current_date}.json"
 
 # 폴더 생성
 os.makedirs(folder_path, exist_ok=True)
