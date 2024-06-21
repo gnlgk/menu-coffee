@@ -50,6 +50,7 @@ jobs:
         python3 composeCoffee.py
         python3 dessert39Coffee.py
         python3 gurunaruCoffee.py
+        python3 hollysCoffee.py
                 
     - name: commits
       run : |
@@ -63,6 +64,7 @@ jobs:
         git add compose/menucompose_*.json
         git add dessert39/menudessert39_*.json
         git add gurunaru/menugurunaru_*.json
+        git add hollys/menuhollys_*.json
         git commit -m "메뉴 수집 완료"
         
     - name: push
