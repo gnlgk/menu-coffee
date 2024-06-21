@@ -5,6 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
 from bs4 import BeautifulSoup
 from datetime import datetime
 import time
@@ -14,7 +15,7 @@ import os
 # 현재 날짜 가져오기
 current_date = datetime.now().strftime("%Y-%m-%d")
 folder_path = "tomntoms"
-filename = f"{folder_path}/menutomntom_{current_date}.json"
+filename = f"{folder_path}/menu-tomntom_{current_date}.json"
 
 # 폴더 생성
 os.makedirs(folder_path, exist_ok=True)
@@ -31,13 +32,14 @@ WebDriverWait(browser, 10).until(
     EC.presence_of_element_located((By.CLASS_NAME, "pb-20"))
 )
 
-# "더보기" 버튼을 찾아 클릭
+# "더보기" 버튼 클릭
 try:
     more_button = WebDriverWait(browser, 10).until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, ".custom-button.main-tab"))
     )
     if more_button:
-        browser.execute_script("arguments[0].click();", more_button)
+        actions = ActionChains(browser)
+        actions.move_to_element(more_button).click().perform()
         print("Clicked '더보기' button.")
         time.sleep(3)  # 페이지가 로드될 시간을 주기 위해 잠시 대기
 except Exception as e:
@@ -55,21 +57,17 @@ for track in tracks:
     title_elem = track.select_one(".relative.w-full button > div > div > p > span:nth-of-type(1)")
     title = title_elem.text.strip() if title_elem else ""
     
-    titleeng_elem = track.select_one(".relative.w-full button > div > div > p > span:nth-of-type(2)")
+    titleeng_elem = track.select_one(".relative.w-full button > div > div > h3")
     titleeng = titleeng_elem.text.strip() if titleeng_elem else ""
     
     image_url_elem = track.select_one(".relative.w-full button > div > img")
     image_url = image_url_elem.get('src') if image_url_elem else ""
 
-    descrition_elem = track.select_one(".relative.w-full button > div > p:nth-of-type(3)")
-    descrition = descrition_elem.text.strip() if descrition_elem else ""
-
     coffee_data.append({
         "brand": "탐탐",
         "title": title,
         "titleE": titleeng,
-        "imageURL": f"https://www.tomntoms.com{image_url}" if image_url else "",
-        "desction": descrition,
+        "imageURL": f"{image_url}" if image_url else "",
         "address": "https://www.tomntoms.com/"
     })
     print(f"Added coffee data: {coffee_data[-1]}")
