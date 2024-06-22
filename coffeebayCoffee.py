@@ -40,7 +40,7 @@ def extract_coffee_data(soup, page_title):
             image_url = "No Image URL"
         
         sub_title = track.select_one(".over_con > .contents_con.w_niceScroll_con > .contents_con.m_niceScroll_con > .info01_con > .intro_con span").text.strip()
-        content = track.select_one(".over_con > .contents_con.w_niceScroll_con > .contents_con.m_niceScroll_con > .info02_con > .info_con span").text.strip()
+        # content = track.select_one(".over_con > .contents_con.w_niceScroll_con > .contents_con.m_niceScroll_con > .info02_con > .info_con span").text.strip()
 
         canonical_link = soup.find('link', rel='canonical')
         address = canonical_link['href'].strip() if canonical_link else "No Address"
@@ -51,7 +51,7 @@ def extract_coffee_data(soup, page_title):
             "titleE": en_title,
             "imageURL": image_url,
             "description": sub_title,
-            "information": content,
+            # "information": content,
             "address": address
         })
 
