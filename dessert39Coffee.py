@@ -55,7 +55,7 @@ for track in tracks:
         "brand": brand,
         "title": title,
         "imageURL": image_url,
-        "desction": desction,
+        "description": desction,
         "address": address
     })
 
