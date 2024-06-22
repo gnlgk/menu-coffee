@@ -13,7 +13,7 @@ import os
 
 # 현재 날짜 가져오기
 current_date = datetime.now().strftime("%Y-%m-%d")
-folder_path = "tomntoms"
+folder_path = "tomntom"
 filename = f"{folder_path}/menutomntom_{current_date}.json"
 
 # 폴더 생성
