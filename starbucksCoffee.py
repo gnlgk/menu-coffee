@@ -78,7 +78,7 @@ for product_cd in product_cd_list:
         "title": title,
         "titleE": titleE,
         "imageURL": image_url,
-        "desction": desction,
+        "description": desction,
         "information": information,
         "address": detail_url
     })
