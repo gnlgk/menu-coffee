@@ -98,7 +98,7 @@ for i in range(0, len(menu_ids), 2):
             "title": title,
             "titleE": titleE,
             "imageURL": image_url,
-            "desction": desction,
+            "description": desction,
             "information": information,
             "address": address
         })
