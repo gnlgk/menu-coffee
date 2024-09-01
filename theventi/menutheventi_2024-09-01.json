@@ -1,0 +1,326 @@
+[
+    {
+        "brand": "더벤티",
+        "title": "핫 아메리카노 (벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_QT0udRFB_20240417044933.png",
+        "description": "더벤티의 깊고 진한 커피풍미를 느낄 수 있는 핫 아메리카노\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티 (600ml)",
+            "열량(kcal)": "13",
+            "당류(g)": "-",
+            "단백질(g)": "1",
+            "포화지방(g)": "0.035",
+            "나트륨(mg)": "1",
+            "카페인(mg)": "236 (고카페인)",
+            "알레르기": "-"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=365"
+    },
+    {
+        "brand": "더벤티",
+        "title": "아이스 아메리카노 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_wZEAM9S1_20240417044823.png",
+        "description": "더벤티의 깊고 진한 커피풍미를 느낄 수 있는 아이스 아메리카노\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "13",
+            "당류(g)": "-",
+            "단백질(g)": "1",
+            "포화지방(g)": "0.07",
+            "나트륨(mg)": "1",
+            "카페인(mg)": "236 (고카페인)",
+            "알레르기": "-"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=364"
+    },
+    {
+        "brand": "더벤티",
+        "title": "카페라떼 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_OP7VRdbB_20240417044612.png",
+        "description": "더벤티의 진한 에스프레소에 부드러운 우유가 어우러진 고소한 카페라떼\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "242 (Hot) / 160 (Iced)",
+            "당류(g)": "18 (Hot) / 11 (Iced)",
+            "단백질(g)": "12 (Hot) / 8 (Iced)",
+            "포화지방(g)": "8 (Hot) / 5 (Iced)",
+            "나트륨(mg)": "176 (Hot) / 113 (Iced)",
+            "카페인(mg)": "296 (Hot, Iced) (고카페인)",
+            "알레르기": "우유"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=363"
+    },
+    {
+        "brand": "더벤티",
+        "title": "오트카페라떼 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_XfLZGOSN_20240417044021.png",
+        "description": "리치한 풍미의 귀리음료에 다크로스트 원두의 풍미가 어우러진 오트카페라떼\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "235 (Hot) / 156 (Iced)",
+            "당류(g)": "11 (Hot) / 7 (Iced)",
+            "단백질(g)": "3 (Hot) / 2 (Iced)",
+            "포화지방(g)": "1 (Hot, Iced)",
+            "나트륨(mg)": "158 (Hot) / 102 (Iced)",
+            "카페인(mg)": "296 (Hot, Iced) (고카페인)",
+            "알레르기": "-"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=362"
+    },
+    {
+        "brand": "더벤티",
+        "title": "바닐라딥라떼 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_63aQGJfH_20240417043815.png",
+        "description": "더벤티의 진한 에스프레소에 고급스러운 바닐라 풍미가 부드럽게 어우러진 바닐라딥라떼\n※ 저당 메뉴는 주문 시, 옵션 선택을 통해 주문이 가능합니다.\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "403 (Hot) / 341 (Iced)",
+            "당류(g)": "32 (Hot) / 27 (Iced)  ※저당옵션 적용 시 18 (Hot) / 13 (Iced)",
+            "단백질(g)": "11 (Hot) / 9 (Iced)",
+            "포화지방(g)": "10 (Hot) / 8 (Iced)",
+            "나트륨(mg)": "260 (Hot) / 212 (Iced)",
+            "카페인(mg)": "296 (Hot, Iced) (고카페인)",
+            "알레르기": "우유"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=361"
+    },
+    {
+        "brand": "더벤티",
+        "title": "믹스커피 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_DYd5Hfym_20240417043238.png",
+        "description": "원조 인스턴트 커피의 맛을 부드럽게 느낄 수 있는 더벤티의 믹스커피\n※ 저당 메뉴는 주문 시, 옵션 선택을 통해 주문이 가능합니다.\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "371 (Hot, Iced)",
+            "당류(g)": "16 (Hot, Iced)  ※저당옵션 적용시 3 (Hot, Iced)",
+            "단백질(g)": "2 (Hot, Iced)",
+            "포화지방(g)": "7 (Hot, Iced)",
+            "나트륨(mg)": "32 (Hot, Iced)",
+            "카페인(mg)": "138 (Hot, Iced) (고카페인)",
+            "알레르기": "우유"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=360"
+    },
+    {
+        "brand": "더벤티",
+        "title": "헤이즐넛딥라떼 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_W5nxL7j8_20240417042943.png",
+        "description": "더벤티의 진한 에스프레소에 고소한 헤이즐넛 풍미가 감미롭게 어우러진 헤이즐넛딥라떼 \n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "359 (Hot) / 297 (Iced)",
+            "당류(g)": "35 (Hot) / 30 (Iced)",
+            "단백질(g)": "11 (Hot) / 8 (Iced)",
+            "포화지방(g)": "11 (Hot) / 9 (Iced)",
+            "나트륨(mg)": "206 (Hot) / 159 (Iced)",
+            "카페인(mg)": "296 (Hot, Iced) (고카페인)",
+            "알레르기": "우유"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=359"
+    },
+    {
+        "brand": "더벤티",
+        "title": "연유라떼 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_4exU6T0P_20240417042742.png",
+        "description": "더벤티의 진한 에스프레소에 달콤한 연유가 어우러진 부드러운 연유라떼\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "424 (Hot) / 363 (Iced)",
+            "당류(g)": "45 (Hot) / 40 (Iced)",
+            "단백질(g)": "15 (Hot) / 12 (Iced)",
+            "포화지방(g)": "10 (Hot) / 8 (Iced)",
+            "나트륨(mg)": "215 (Hot) / 167 (Iced)",
+            "카페인(mg)": "296 (Hot, Iced) (고카페인)",
+            "알레르기": "우유"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=358"
+    },
+    {
+        "brand": "더벤티",
+        "title": "아인슈페너 (하프벤티/벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_op2OW1Kc_20240417034112.png",
+        "description": "더벤티만의 특별한 레시피로 만든 크림을 얹어 부드럽고 달콤하게 마실 수 있는 아인슈페너 [음료 특성상 빨대는 제공되지 않습니다]\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "하프벤티　(420ml)　벤티　(600ml)",
+            "열량(kcal)": "504 (하프벤티) / 768 (벤티)",
+            "당류(g)": "37 (하프벤티) / 66 (벤티)",
+            "단백질(g)": "6 (하프벤티) / 8 (벤티)",
+            "포화지방(g)": "24 (하프벤티) / 33 (벤티)",
+            "나트륨(mg)": "93 (하프벤티) / 118 (벤티)",
+            "카페인(mg)": "296 (하프벤티) / 591 (벤티) (고카페인)",
+            "알레르기": "우유, 대두"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=357"
+    },
+    {
+        "brand": "더벤티",
+        "title": "코코넛라떼 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_Cl406ULJ_20240417033512.png",
+        "description": "더벤티의 진한 에스프레소에 고소한 코코넛 풍미가 부드럽게 어우러진 코코넛라떼\n※ 저당 메뉴는 주문 시, 옵션 선택을 통해 주문이 가능합니다.\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "322 (Hot) / 261 (Iced)",
+            "당류(g)": "26 (Hot) / 21 (Iced)  ※저당옵션 적용시 17 (Hot) / 12 (Iced)",
+            "단백질(g)": "11 (Hot) / 8 (Iced)",
+            "포화지방(g)": "11 (Hot) / 9 (Iced)",
+            "나트륨(mg)": "200 (Hot) / 152 (Iced)",
+            "카페인(mg)": "296 (Hot, Iced) (고카페인)",
+            "알레르기": "우유"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=356"
+    },
+    {
+        "brand": "더벤티",
+        "title": "카페모카 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_jS47Z6ql_20240417033034.png",
+        "description": "더벤티의 진한 에스프레소에 달콤 쌉싸름한 초콜릿이 더해진 부드럽고 달콤한 카페모카\n※ 저당 메뉴는 주문 시, 옵션 선택을 통해 주문이 가능합니다.\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "491 (Hot) / 429 (Iced)",
+            "당류(g)": "36 (Hot) / 31 (Iced)  ※저당옵션 적용시 16 (Hot) / 11 (Iced)",
+            "단백질(g)": "13 (Hot) / 10 (Iced)",
+            "포화지방(g)": "15 (Hot) / 13 (Iced)",
+            "나트륨(mg)": "233 (Hot) / 185 (Iced)",
+            "카페인(mg)": "303 (Hot, Iced) (고카페인)",
+            "알레르기": "우유, 대두"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=355"
+    },
+    {
+        "brand": "더벤티",
+        "title": "토피넛라떼 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_uyjOpMHY_20240417032704.png",
+        "description": "향긋한 카라멜과 고소한 넛츠가 조화롭게 어우러진 토피넛 라떼",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "394 (Hot) / 345 (Iced)",
+            "당류(g)": "43 (Hot) / 39 (Iced)",
+            "단백질(g)": "10 (Hot) / 8 (Iced)",
+            "포화지방(g)": "12 (Hot) / 10 (Iced)",
+            "나트륨(mg)": "265 (Hot) / 228 (Iced)",
+            "카페인(mg)": "10 (Hot, Iced)",
+            "알레르기": "우유, 대두, 땅콩, 밀"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=354"
+    },
+    {
+        "brand": "더벤티",
+        "title": "카라멜마끼아또 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_Le3Sk65q_20240417032404.png",
+        "description": "더벤티의 진한 에스프레소에 카라멜의 풍미가 어우러진 달콤한 카라멜 마끼야또\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "363 (Hot) / 281 (Iced)",
+            "당류(g)": "47 (Hot) / 41 (Iced)",
+            "단백질(g)": "11 (Hot) / 7 (Iced)",
+            "포화지방(g)": "7 (Hot) / 5 (Iced)",
+            "나트륨(mg)": "169 (Hot) / 106 (Iced)",
+            "카페인(mg)": "296 (Hot, Iced) (고카페인)",
+            "알레르기": "우유"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=353"
+    },
+    {
+        "brand": "더벤티",
+        "title": "아이스크림라떼 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_pMD40YKT_20240417032018.png",
+        "description": "더벤티의 진한 에스프레소에 밀키한 우유베이스와 바닐라아이스크림을 올려 달콤함과 농후함을 동시에 즐기는 아이스크림라떼\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "370",
+            "당류(g)": "45",
+            "단백질(g)": "5",
+            "포화지방(g)": "9",
+            "나트륨(mg)": "143",
+            "카페인(mg)": "296(고카페인)",
+            "알레르기": "우유"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=352"
+    },
+    {
+        "brand": "더벤티",
+        "title": "콜드브루 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_KOT3jdlq_20240417031728.png",
+        "description": "저온 고농도 추출로 깔끔한 맛과 부드러운 풍미가 특징인 더벤티의 콜드브루\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "14",
+            "당류(g)": "-",
+            "단백질(g)": "1",
+            "포화지방(g)": "-",
+            "나트륨(mg)": "-",
+            "카페인(mg)": "92(고카페인)",
+            "알레르기": "-"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=351"
+    },
+    {
+        "brand": "더벤티",
+        "title": "콜드브루라떼 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_ijsxJT3S_20240417031536.png",
+        "description": "저온 고농도 추출로 깔끔한 맛과 부드러운 우유가 어우러진 고소한 더벤티의 콜드브루 라떼\n*고카페인 기준 : 1ml당 0.15mg 이상 카페인 함유 시\n※ 어린이, 임산부, 카페인 민감자의 경우 고카페인 음료 섭취에 주의하시기 바랍니다.",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "160",
+            "당류(g)": "11",
+            "단백질(g)": "8",
+            "포화지방(g)": "5",
+            "나트륨(mg)": "113",
+            "카페인(mg)": "92(고카페인)",
+            "알레르기": "우유"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=350"
+    },
+    {
+        "brand": "더벤티",
+        "title": "바닐라크림콜드브루 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_v8FxKqmD_20240417031349.png",
+        "description": "바닐라 크림의 달콤함과 부드러움이 더해져 깔끔하게 즐기는 콜드브루 [크림은 완전히 섞어서 제공되므로 이미지와 다를 수 있습니다]",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "263",
+            "당류(g)": "33",
+            "단백질(g)": "2",
+            "포화지방(g)": "7",
+            "나트륨(mg)": "12",
+            "카페인(mg)": "79",
+            "알레르기": "우유"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=349"
+    },
+    {
+        "brand": "더벤티",
+        "title": "헤이즐넛크림콜드브루 (벤티/더벤티)",
+        "titleE": "",
+        "imageURL": "http://www.theventi.co.kr/new/upload/menu_new/30927906_VnoWDlb2_20240417030256.png",
+        "description": "헤이즐넛 크림의 고소함과 부드러움이 더해져 깔끔하게 즐기는 콜드브루 [크림은 완전히 섞어서 제공되므로 이미지와 다를 수 있습니다]",
+        "information": {
+            "1회 제공량": "벤티　(600ml) 더벤티　(960ml)",
+            "열량(kcal)": "253",
+            "당류(g)": "32",
+            "단백질(g)": "2",
+            "포화지방(g)": "7",
+            "나트륨(mg)": "13",
+            "카페인(mg)": "79",
+            "알레르기": "우유"
+        },
+        "address": "https://www.theventi.co.kr/new2022/menu/all-view.new.html?uid=348"
+    }
+]
