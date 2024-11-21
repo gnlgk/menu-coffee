@@ -1,0 +1,98 @@
+[
+    {
+        "brand": "커핀그루나루",
+        "title": "밀키라떼(HOT/ICED)",
+        "titleE": "Milky Latte",
+        "imageURL": "https://www.coffine.co.kr/uploads/menu/20191126/3R5aAkGTQil9JyHc_20191126.png",
+        "description": "에스프레소에 생크림과 우유를 넣어 풍미 깊은 맛을 느낄 수 있는 라떼",
+        "address": "https://www.coffine.co.kr/"
+    },
+    {
+        "brand": "커핀그루나루",
+        "title": "더블 카페라떼(HOT/ICED)",
+        "titleE": "Doble Caffe Latte",
+        "imageURL": "https://www.coffine.co.kr/uploads/menu/20191126/wQsamc3xWPUH1ypo_20191126.png",
+        "description": "카페라떼에 에스프레소 샷이 추가되어 진한맛을 그대로 느낄 수 있는 라떼",
+        "address": "https://www.coffine.co.kr/"
+    },
+    {
+        "brand": "커핀그루나루",
+        "title": "에소프레소 (HOT)",
+        "titleE": "Espresso",
+        "imageURL": "https://www.coffine.co.kr/uploads/menu/20160119/uZP6kgo23CwzUqW1_20160119.png",
+        "description": "이탈리아식으로 추출된 깊고 진한 커피 본연의 맛의 커피",
+        "address": "https://www.coffine.co.kr/"
+    },
+    {
+        "brand": "커핀그루나루",
+        "title": "에소프레소 마끼아또 (HOT)",
+        "titleE": "Espresso Macchiato",
+        "imageURL": "https://www.coffine.co.kr/uploads/menu/20160119/fmU91skpXj8TFD3h_20160119.png",
+        "description": "진한 에스프레소 위에 부드러운 스팀 우유를 첨가하여 깊고 진한 맛을 담은 커피",
+        "address": "https://www.coffine.co.kr/"
+    },
+    {
+        "brand": "커핀그루나루",
+        "title": "카푸치노 (HOT/ ICED)",
+        "titleE": "Cappuccino",
+        "imageURL": "https://www.coffine.co.kr/uploads/menu/20160119/3YnDjvactoI4xhEi_20160119.png",
+        "description": "에스프레소와 부드러운 우유 거품이 어우러져 깊고 부드러운 커피",
+        "address": "https://www.coffine.co.kr/"
+    },
+    {
+        "brand": "커핀그루나루",
+        "title": "카페 아메리카노 (HOT/ ICED)",
+        "titleE": "Caffe Americano",
+        "imageURL": "https://www.coffine.co.kr/uploads/menu/20160119/FCdyxRUgTYWL3BE0_20160119.png",
+        "description": "프리미엄 원두를 갓 볶아 진하고 풍부한 맛과 향을 느낄 수 있는 커피",
+        "address": "https://www.coffine.co.kr/"
+    },
+    {
+        "brand": "커핀그루나루",
+        "title": "카페라떼 (HOT/ ICED)",
+        "titleE": "Caffe Latte",
+        "imageURL": "https://www.coffine.co.kr/uploads/menu/20160119/BoJOfNAZSbW0M8jP_20160119.png",
+        "description": "진한 에스프레소에 고소한 우유가 어우러져 부드럽게 즐길 수 있는 커피",
+        "address": "https://www.coffine.co.kr/"
+    },
+    {
+        "brand": "커핀그루나루",
+        "title": "카라멜 마끼아또 (HOT/ ICED)",
+        "titleE": "Caramel Macchiato",
+        "imageURL": "https://www.coffine.co.kr/uploads/menu/20160119/AT8or1gzkZ0VcDMy_20160119.png",
+        "description": "진한 에스프레소에 카라멜과 신선한 우유가 만나 달콤하고 풍부한 맛을 담은 커피",
+        "address": "https://www.coffine.co.kr/"
+    },
+    {
+        "brand": "커핀그루나루",
+        "title": "바닐라라떼 (HOT/ ICED)",
+        "titleE": "Vanilla Latte",
+        "imageURL": "https://www.coffine.co.kr/uploads/menu/20160119/MVek8DRl2taY3AdH_20160119.png",
+        "description": "진한 에스프레소에 달콤한 바닐라파우더와 우유가 만나 부드러운 맛을 담은 커피",
+        "address": "https://www.coffine.co.kr/"
+    },
+    {
+        "brand": "커핀그루나루",
+        "title": "카페모카 (HOT/ ICED)",
+        "titleE": "Caffe Mocha",
+        "imageURL": "https://www.coffine.co.kr/uploads/menu/20160119/rYmLCnWgQvXPp6F4_20160119.png",
+        "description": "진한 에스프레소에  초콜릿 모카베이스와 우유, 달콤한 생크림으로 부드러움을 더한 커피",
+        "address": "https://www.coffine.co.kr/"
+    },
+    {
+        "brand": "커핀그루나루",
+        "title": "그린민트 모카 (HOT/ ICED)",
+        "titleE": "Green Mint Mocha",
+        "imageURL": "https://www.coffine.co.kr/uploads/menu/20160119/c1hlCpKoBQjX5TyF_20160119.png",
+        "description": "진한 에스프레소에 달콤한 초코, 민트향이 첨가되어 상쾌하고 달콤한 커피",
+        "address": "https://www.coffine.co.kr/"
+    },
+    {
+        "brand": "커핀그루나루",
+        "title": "화이트 드림 모카 (HOT/ ICED)",
+        "titleE": "White Dream Mocha",
+        "imageURL": "https://www.coffine.co.kr/uploads/menu/20160119/cJB8WIqfyUQASanD_20160119.png",
+        "description": "진한 에스프레소에 부드러운 화이트 초콜릿 소스와 우유가 조화로운 달콤한 커피",
+        "address": "https://www.coffine.co.kr/"
+    }
+]
